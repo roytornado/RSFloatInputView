@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'RSFloatInputView_Example' do
+  pod 'RSFloatInputView', :path => '../'
+
+  target 'RSFloatInputView_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
