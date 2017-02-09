@@ -1,25 +1,107 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AyM-qu-VHi">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <!--Dark Theme-->
+        <scene sceneID="4rw-m9-UAf">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="3Ra-7q-uMj" customClass="DarkViewController" customModule="RSFloatInputView_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="9OF-ZX-eMx"/>
+                        <viewControllerLayoutGuide type="bottom" id="3WG-vI-Vm7"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <view key="view" contentMode="scaleToFill" id="jrR-jB-P9b">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Dark Theme" id="hF8-yF-Sit"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wBC-UP-Ztn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-290" y="643"/>
+        </scene>
+        <!--Light Theme-->
+        <scene sceneID="ksF-7t-VGA">
+            <objects>
+                <viewController id="YwL-54-c0n" customClass="LightViewController" customModule="RSFloatInputView_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gyq-8E-96z"/>
+                        <viewControllerLayoutGuide type="bottom" id="bWb-zE-yeb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YmA-Rd-sRh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Z6d-SH-dSF">
+                                <rect key="frame" x="9" y="20" width="358" height="180"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SCa-ha-op9">
+                                        <rect key="frame" x="0.0" y="0.0" width="358" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="rcZ-3m-yeA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wv1-0J-sQd" customClass="RSFloatInputView" customModule="RSFloatInputView">
+                                        <rect key="frame" x="0.0" y="40" width="358" height="70"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="9vg-xQ-Ce7"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oh2-ga-AwQ" customClass="RSFloatInputView" customModule="RSFloatInputView">
+                                        <rect key="frame" x="0.0" y="110" width="358" height="70"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="bT2-jh-Un5"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0033191178253353581" green="0.65054709385714282" blue="0.54765444121842455" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Z6d-SH-dSF" firstAttribute="leading" secondItem="YmA-Rd-sRh" secondAttribute="leading" constant="9" id="QWk-Z8-qxv"/>
+                            <constraint firstItem="Z6d-SH-dSF" firstAttribute="top" secondItem="gyq-8E-96z" secondAttribute="bottom" id="iMn-vd-65l"/>
+                            <constraint firstAttribute="trailing" secondItem="Z6d-SH-dSF" secondAttribute="trailing" constant="8" id="x5P-G8-RAz"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Light Theme" id="kqi-fL-VAA"/>
+                    <connections>
+                        <outlet property="phoneInputView" destination="Wv1-0J-sQd" id="ELk-Bc-Bh5"/>
+                        <outlet property="whatsappInputView" destination="Oh2-ga-AwQ" id="0Kv-Fx-cNF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o4u-iq-XFE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-290" y="-12"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="eTA-ds-mdZ">
+            <objects>
+                <tabBarController id="AyM-qu-VHi" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="kQz-5V-Rrf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="YwL-54-c0n" kind="relationship" relationship="viewControllers" id="DDS-UD-vpf"/>
+                        <segue destination="3Ra-7q-uMj" kind="relationship" relationship="viewControllers" id="fu4-jq-vv7"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ckA-Fv-DmI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1242" y="315"/>
         </scene>
     </scenes>
 </document>

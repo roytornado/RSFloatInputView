@@ -1,0 +1,16 @@
+PODS:
+  - RSFloatInputView (0.1.0)
+
+DEPENDENCIES:
+  - RSFloatInputView (from `../`)
+
+EXTERNAL SOURCES:
+  RSFloatInputView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  RSFloatInputView: c4bd2c43acb438ed9a8b78c0ced4046e25ea33e9
+
+PODFILE CHECKSUM: 3ab601c97b81f8bf5e0df50e24e130091b97b79d
+
+COCOAPODS: 1.2.0.beta.1

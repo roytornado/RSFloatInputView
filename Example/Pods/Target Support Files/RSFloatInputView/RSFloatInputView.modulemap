@@ -1,0 +1,6 @@
+framework module RSFloatInputView {
+  umbrella header "RSFloatInputView-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module Pods_RSFloatInputView_Example {
+  umbrella header "Pods-RSFloatInputView_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
