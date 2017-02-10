@@ -1,9 +1,21 @@
 import UIKit
+import RSFloatInputView
 
-class DarkViewController: UIViewController {
+class DarkViewController: UIViewController, UITextFieldDelegate {
+  
+  @IBOutlet weak var phoneInputView: RSFloatInputView!
+  @IBOutlet weak var whatsappInputView: RSFloatInputView!
+  @IBOutlet weak var facebookInputView: RSFloatInputView!
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
+    phoneInputView.textField.delegate = self
+    whatsappInputView.textField.delegate = self
+    facebookInputView.textField.delegate = self
+  }
+  
+  func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    textField.resignFirstResponder()
+    return true
   }
 }

@@ -19,9 +19,140 @@
                     <view key="view" contentMode="scaleToFill" id="jrR-jB-P9b">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dHG-7c-5zX">
+                                <rect key="frame" x="32" y="52" width="311" height="250"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYh-Ai-GoL">
+                                        <rect key="frame" x="0.0" y="0.0" width="311" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="3Xb-3n-5tz"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EK7-aB-uPG" customClass="RSFloatInputView" customModule="RSFloatInputView">
+                                        <rect key="frame" x="0.0" y="40" width="311" height="70"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="U3b-V4-SGS"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeHolderStringKey" value="TXT_Phone"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="applyTransform" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="leftInset">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="rightInset">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="idlePlaceHolderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="floatPlaceHolderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="separatorColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="animationDuration">
+                                                <real key="value" value="0.59999999999999998"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ohY-Fg-2rK" customClass="RSFloatInputView" customModule="RSFloatInputView">
+                                        <rect key="frame" x="0.0" y="110" width="311" height="70"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="Jny-GI-1ja"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeHolderStringKey" value="TXT_Whatsapp"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="applyTransform" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="leftInset">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="rightInset">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="idlePlaceHolderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="floatPlaceHolderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="separatorColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="animationDuration">
+                                                <real key="value" value="0.59999999999999998"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vhj-8Z-1Z7" customClass="RSFloatInputView" customModule="RSFloatInputView">
+                                        <rect key="frame" x="0.0" y="180" width="311" height="70"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="GZv-wL-2z2"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeHolderStringKey" value="TXT_Facebook"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="applyTransform" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="leftInset">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="rightInset">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="idlePlaceHolderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="floatPlaceHolderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="separatorColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="animationDuration">
+                                                <real key="value" value="0.59999999999999998"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dHG-7c-5zX" firstAttribute="top" secondItem="9OF-ZX-eMx" secondAttribute="bottom" constant="32" id="LJG-kt-Hdc"/>
+                            <constraint firstAttribute="trailing" secondItem="dHG-7c-5zX" secondAttribute="trailing" constant="32" id="Lyd-Ia-Jec"/>
+                            <constraint firstItem="dHG-7c-5zX" firstAttribute="leading" secondItem="jrR-jB-P9b" secondAttribute="leading" constant="32" id="hQW-DO-VNU"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Dark Theme" id="hF8-yF-Sit"/>
+                    <connections>
+                        <outlet property="facebookInputView" destination="vhj-8Z-1Z7" id="Sds-so-tsY"/>
+                        <outlet property="phoneInputView" destination="EK7-aB-uPG" id="waH-pz-hZA"/>
+                        <outlet property="whatsappInputView" destination="ohY-Fg-2rK" id="IKb-h1-u1t"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wBC-UP-Ztn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -40,7 +171,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Z6d-SH-dSF">
-                                <rect key="frame" x="9" y="20" width="358" height="180"/>
+                                <rect key="frame" x="9" y="20" width="358" height="250"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SCa-ha-op9">
                                         <rect key="frame" x="0.0" y="0.0" width="358" height="40"/>
@@ -57,6 +188,13 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="70" id="9vg-xQ-Ce7"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="iconImage" value="icWidgetPhone"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeHolderStringKey" value="TXT_Phone"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="separatorLeftInset">
+                                                <real key="value" value="54"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oh2-ga-AwQ" customClass="RSFloatInputView" customModule="RSFloatInputView">
                                         <rect key="frame" x="0.0" y="110" width="358" height="70"/>
@@ -64,6 +202,25 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="70" id="bT2-jh-Un5"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="iconImage" value="icWidgetWhatsapp"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeHolderStringKey" value="TXT_Whatsapp"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="separatorLeftInset">
+                                                <real key="value" value="54"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pvl-9X-mGe" customClass="RSFloatInputView" customModule="RSFloatInputView">
+                                        <rect key="frame" x="0.0" y="180" width="358" height="70"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="tIF-Fx-yFU"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="iconImage" value="icWidgetFb"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeHolderStringKey" value="TXT_Facebook"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="separatorEnabled" value="NO"/>
+                                        </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
                             </stackView>
@@ -77,6 +234,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Light Theme" id="kqi-fL-VAA"/>
                     <connections>
+                        <outlet property="facebookInputView" destination="pvl-9X-mGe" id="4Pb-HI-dyo"/>
                         <outlet property="phoneInputView" destination="Wv1-0J-sQd" id="ELk-Bc-Bh5"/>
                         <outlet property="whatsappInputView" destination="Oh2-ga-AwQ" id="0Kv-Fx-cNF"/>
                     </connections>
@@ -104,4 +262,9 @@
             <point key="canvasLocation" x="-1242" y="315"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icWidgetFb" width="30" height="30"/>
+        <image name="icWidgetPhone" width="30" height="30"/>
+        <image name="icWidgetWhatsapp" width="30" height="30"/>
+    </resources>
 </document>
