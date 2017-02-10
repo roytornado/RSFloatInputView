@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RSFloatInputView'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of RSFloatInputView.'
+  s.version          = '1.0.0'
+  s.summary          = 'A Float Input View with smooth animation and supporting icon and seperator written with Swift'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
