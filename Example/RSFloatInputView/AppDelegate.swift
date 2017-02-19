@@ -9,13 +9,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     RSFloatInputView.stringTransformer = {
       orginal in
+      // Transform the place holder string configured in XIB with your own way.
+      // e.g return NSLocalizedString(orginal, comment: orginal)
       return orginal.replacingOccurrences(of: "TXT_", with: "")
     }
     RSFloatInputView.instanceTransformer = {
       instance in
-      instance.floatPlaceHolderColor = UIColor.brown
-      instance.textColor = UIColor.darkText
-      instance.tintColor = UIColor.brown
+      // Support multi-styles in one place using the tag
+      if instance.tag == 0 {
+        instance.floatPlaceHolderColor = UIColor.brown
+        instance.textColor = UIColor.darkText
+        instance.tintColor = UIColor.brown
+      }
+      if instance.tag == 1 {
+        instance.floatPlaceHolderColor = UIColor.blue
+        instance.textColor = UIColor.darkText
+        instance.tintColor = UIColor.blue
+      }
     }
     return true
   }

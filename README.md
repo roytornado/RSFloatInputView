@@ -11,17 +11,43 @@
 * Configurable padding, size, fonts and colors
 * Ready for multi styles
 * Ready for string localization
+* Configurable in interface builder
 
 ## Demo
 
 [Yotube Video Demo](https://youtu.be/_08pUzXVp5s "Youtube")
 
 ![Gif](./ss_gif.gif?raw=true)
-![In light theme](./ss_light.png?raw=true "In light theme" =250x)
-![In dark theme](./ss_dark.png?raw=true "In dark theme" =250x)
+![In light theme](./ss_light.png?raw=true "In light theme")
+![In dark theme](./ss_dark.png?raw=true "In dark theme")
 
-## Example
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+## Customization
+
+```
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+RSFloatInputView.stringTransformer = {
+orginal in
+// Transform the place holder string configured in XIB with your own way.
+// e.g return NSLocalizedString(orginal, comment: orginal)
+return orginal.replacingOccurrences(of: "TXT_", with: "")
+}
+RSFloatInputView.instanceTransformer = {
+instance in
+// Support multi-styles in one place using the tag
+if instance.tag == 0 {
+instance.floatPlaceHolderColor = UIColor.brown
+instance.textColor = UIColor.darkText
+instance.tintColor = UIColor.brown
+}
+if instance.tag == 1 {
+instance.floatPlaceHolderColor = UIColor.blue
+instance.textColor = UIColor.darkText
+instance.tintColor = UIColor.blue
+}
+}
+return true
+}
+```
 
 ## Requirements
 * iOS 8.0
