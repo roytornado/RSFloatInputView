@@ -14,10 +14,11 @@
 
 ## Demo
 
-[link text](https://youtu.be/_08pUzXVp5s "Youtube")
+[Yotube Video Demo](https://youtu.be/_08pUzXVp5s "Youtube")
 
-![Alt text](./ss_light.png?raw=true "In light theme")
-![Alt text](./ss_dark.png?raw=true "In dark theme")
+![Gif](./ss_gif.gif?raw=true)
+![In light theme](./ss_light.png?raw=true "In light theme" =250x)
+![In dark theme](./ss_dark.png?raw=true "In dark theme" =250x)
 
 ## Example
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
