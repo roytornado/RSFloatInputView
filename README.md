@@ -13,9 +13,9 @@
 * Ready for string localization
 
 ## Demo
-![Alt text](./ss_light?raw=true "In light theme")
+![Alt text](./ss_light.png?raw=true "In light theme")
 
-![Alt text](./ss_dark?raw=true "In dark theme")
+![Alt text](./ss_dark.png?raw=true "In dark theme")
 
 ## Example
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
