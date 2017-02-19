@@ -18,7 +18,16 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+A Float Input View with smooth animation and supporting icon and seperator written with Swift
+
+Features:
+* Smooth animation using CoreText
+* Support optional left icon
+* Support optional seperator
+* Configurable padding, size, fonts and colors
+* Ready for multi styles
+* Ready for string localization
+
                        DESC
 
   s.homepage         = 'https://github.com/roytornado/RSFloatInputView'
