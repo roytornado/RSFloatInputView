@@ -13,8 +13,10 @@
 * Ready for string localization
 
 ## Demo
-![Alt text](./ss_light.png?raw=true "In light theme")
 
+[link text](https://youtu.be/_08pUzXVp5s "Youtube")
+
+![Alt text](./ss_light.png?raw=true "In light theme")
 ![Alt text](./ss_dark.png?raw=true "In dark theme")
 
 ## Example
