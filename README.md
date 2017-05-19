@@ -17,9 +17,10 @@
 
 [Yotube Video Demo](https://youtu.be/_08pUzXVp5s "Youtube")
 
-![Gif](./ss_gif.gif?raw=true)
-![In light theme](./ss_light.png?raw=true "In light theme")
-![In dark theme](./ss_dark.png?raw=true "In dark theme")
+<img src="./ss_gif.gif" width="200">
+<img src="./ss_light.png" width="200">
+<img src="./ss_dark.png" width="200">
+
 
 ## Customization
 
@@ -51,7 +52,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 
 ## Requirements
 * iOS 8.0
-* Swift 3.0
+* Swift 3.2
 
 ## Installation
 
@@ -63,7 +64,10 @@ pod "RSFloatInputView"
 
 ## Author
 
-roytornado, roytornado@gmail.com
+Roy Ng, roytornado@gmail.com
+@ Redso, https://www.redso.com.hk/
+
+Linkedin: https://www.linkedin.com/in/roy-ng-19427735/
 
 ## License
 
