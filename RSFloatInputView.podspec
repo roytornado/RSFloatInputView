@@ -40,6 +40,7 @@ Features:
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'RSFloatInputView/Classes/**/*'
+  s.swift_version = '4.1'
   
   # s.resource_bundles = {
   #   'RSFloatInputView' => ['RSFloatInputView/Assets/*.png']
