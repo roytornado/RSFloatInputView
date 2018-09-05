@@ -52,7 +52,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 
 ## Requirements
 * iOS 8.0
-* Swift 3.2
+* Swift 4.1
 
 ## Installation
 

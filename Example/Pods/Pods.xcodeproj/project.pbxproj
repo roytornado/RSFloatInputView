@@ -36,15 +36,15 @@
 		367C5DE8AFD910BA89CCA192504FA4E0 /* RSFloatInputView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RSFloatInputView-prefix.pch"; sourceTree = "<group>"; };
 		4D747615DC283CB57302F00F2DB7296A /* RSFloatInputView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RSFloatInputView.xcconfig; sourceTree = "<group>"; };
 		5474AD428286F3A4C3F0834C4489B268 /* RSFloatInputView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RSFloatInputView-umbrella.h"; sourceTree = "<group>"; };
-		55561A2268515903E3040A70AC4BE2CD /* Pods-RSFloatInputView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-RSFloatInputView_Example.modulemap"; sourceTree = "<group>"; };
+		55561A2268515903E3040A70AC4BE2CD /* Pods-RSFloatInputView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RSFloatInputView_Example.modulemap"; sourceTree = "<group>"; };
 		569162CBE66E5BB6BCF6F414DA4EB205 /* Pods-RSFloatInputView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RSFloatInputView_Example-dummy.m"; sourceTree = "<group>"; };
 		6EDF4A8B6550486B092CD8EE79A73AC4 /* Pods-RSFloatInputView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RSFloatInputView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		79B9C9560272D6F6BCB6B45AAA55D7E7 /* Pods-RSFloatInputView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RSFloatInputView_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		8F5A35DA46F14AF155FB16B50FAEE5CE /* Pods_RSFloatInputView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RSFloatInputView_Example.framework; path = "Pods-RSFloatInputView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		99C2C41B8359E29653510B47EB7E5E14 /* RSFloatInputView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RSFloatInputView.framework; path = RSFloatInputView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F5A35DA46F14AF155FB16B50FAEE5CE /* Pods_RSFloatInputView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RSFloatInputView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		99C2C41B8359E29653510B47EB7E5E14 /* RSFloatInputView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RSFloatInputView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A61347152C1B5932C0A4E0F1EAF18AA5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A8BB889138EB2FB26719EB89D6C218B5 /* RSFloatInputView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = RSFloatInputView.modulemap; sourceTree = "<group>"; };
+		A8BB889138EB2FB26719EB89D6C218B5 /* RSFloatInputView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = RSFloatInputView.modulemap; sourceTree = "<group>"; };
 		C31F10612FB14068909B9FD2B0251ED1 /* RSFloatInputView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RSFloatInputView-dummy.m"; sourceTree = "<group>"; };
 		C718048F8CAD13E1DE19AD8E4C0D00BB /* Pods-RSFloatInputView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RSFloatInputView_Example-frameworks.sh"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -109,7 +109,6 @@
 			children = (
 				B7160A3D1C79976E4E16267443C40D7D /* Classes */,
 			);
-			name = RSFloatInputView;
 			path = RSFloatInputView;
 			sourceTree = "<group>";
 		};
@@ -147,7 +146,6 @@
 				DA0E1B75FD9AF9B3D37608AD852DC981 /* RSFloatInputView.swift */,
 				053CDF3AB7C7443DBDD67F1ADC9F4C83 /* RSFloatInputViewUtils.swift */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -250,6 +248,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					A39C9458A888EA9318C897957AA8CA2A = {
+						LastSwiftMigration = 0940;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -326,7 +329,8 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -473,7 +477,8 @@
 				PRODUCT_NAME = RSFloatInputView;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

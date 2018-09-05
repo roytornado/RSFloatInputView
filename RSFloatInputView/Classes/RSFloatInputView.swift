@@ -146,13 +146,13 @@ open class RSFloatInputView: UIView {
     })
   }
   
-  open func focus() {
+  @objc open func focus() {
     textField.becomeFirstResponder()
     changeToFloat(animated: true)
   }
   
-  open func editingDidEnd() {
-    if let text = textField.text, text.characters.count > 0 {
+  @objc open func editingDidEnd() {
+    if let text = textField.text, text.count > 0 {
       changeToFloat(animated: true)
     } else {
       changeToIdle(animated: true)
