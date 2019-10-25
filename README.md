@@ -51,8 +51,8 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 ```
 
 ## Requirements
-* iOS 8.0
-* Swift 4.1
+* iOS 12
+* Swift 5
 
 ## Installation
 
