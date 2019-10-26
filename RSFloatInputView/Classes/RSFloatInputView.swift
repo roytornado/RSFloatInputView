@@ -62,6 +62,9 @@ open class RSFloatInputView: UIView {
     layer.addSublayer(placeHolderLabel)
     addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(focus)))
     textField.addTarget(self, action: #selector(editingDidEnd), for: .editingDidEnd)
+    if #available(iOS 13.0, *) {
+        textField.textColor = .label
+    }
     if applyTransform { RSFloatInputView.instanceTransformer(self) }
     configFontsAndColors()
     changeToIdle(animated: false)
