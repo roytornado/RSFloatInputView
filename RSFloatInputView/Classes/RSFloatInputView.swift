@@ -2,11 +2,11 @@ import UIKit
 import CoreText
 
 open class RSFloatInputView: UIView {
-  open static var stringTransformer: ((String) -> String?)! = {
+  public static var stringTransformer: ((String) -> String?)! = {
     orginal in
     return orginal
   }
-  open static var instanceTransformer: ((RSFloatInputView) -> Void)! = {
+  public static var instanceTransformer: ((RSFloatInputView) -> Void)! = {
     orginal in
   }
   
@@ -62,6 +62,9 @@ open class RSFloatInputView: UIView {
     layer.addSublayer(placeHolderLabel)
     addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(focus)))
     textField.addTarget(self, action: #selector(editingDidEnd), for: .editingDidEnd)
+    if #available(iOS 13.0, *) {
+        textField.textColor = .label
+    }
     if applyTransform { RSFloatInputView.instanceTransformer(self) }
     configFontsAndColors()
     changeToIdle(animated: false)
@@ -111,7 +114,7 @@ open class RSFloatInputView: UIView {
     state = .float
     CATransaction.begin()
     CATransaction.setAnimationDuration(animationDuration)
-    CATransaction.setAnimationTimingFunction(CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut))
+    CATransaction.setAnimationTimingFunction(CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeOut))
     placeHolderLabel.foregroundColor = floatPlaceHolderColor.cgColor
     placeHolderLabel.fontSize = floatPlaceHolderFontSize
     layout()
@@ -131,7 +134,7 @@ open class RSFloatInputView: UIView {
     state = .idle
     CATransaction.begin()
     CATransaction.setAnimationDuration(animationDuration)
-    CATransaction.setAnimationTimingFunction(CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut))
+    CATransaction.setAnimationTimingFunction(CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeOut))
     placeHolderLabel.foregroundColor = idlePlaceHolderColor.cgColor
     placeHolderLabel.fontSize = idlePlaceHolderFontSize
     layout()

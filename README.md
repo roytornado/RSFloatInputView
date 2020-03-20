@@ -5,13 +5,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/RSFloatInputView.svg?style=flat)](http://cocoapods.org/pods/RSFloatInputView)
 
 ## Features
-* Smooth animation using CoreText
-* Support optional left icon
-* Support optional seperator
-* Configurable padding, size, fonts and colors
-* Ready for multi styles
-* Ready for string localization
-* Configurable in interface builder
+* fork from RSFloatInputView to update to swift 5 and remove the nasty warnings on xcode 11
 
 ## Demo
 
@@ -51,8 +45,8 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 ```
 
 ## Requirements
-* iOS 8.0
-* Swift 4.1
+* iOS 12
+* Swift 5
 
 ## Installation
 
